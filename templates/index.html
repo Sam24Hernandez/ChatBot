@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatBot App | Por Sam Hernandez</title>
+    <!-- Icon -->
+    <link rel="icon" href="/static/img/bot.png" />
+    <!-- Static Styles -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="chat-area">
+        <header>
+          <img src="/static/img/img.jpg" alt="" />
+          <div class="details">
+            <span>Chatterbot</span>
+          </div>
+        </header>
+        <div class="chat-box" id="messages"></div>
+        <div class="typing-area">
+          <input
+            id="input"
+            type="text"
+            placeholder="Escribe un mensaje aquí..."
+            autocomplete="off"
+            autofocus="true"
+          />
+          <button id="button"><i class="fab fa-telegram-plane"></i></button>
+        </div>
+      </section>
+    </div>
+  </body>
+
+  <script type="text/javascript" src="/static/js/main.js"></script>
+  <script type="text/javascript" src="/static/js/constants.js"></script>
+  <script type="text/javascript" src="/static/js/speech.js"></script>
+</html>
